@@ -5,6 +5,9 @@
 		}
 	],
 	"settings": {
-		"python.pythonPath": "${workspaceFolder}\\venv\\Scripts\\python.exe"
+		"python.pythonPath": "${workspaceFolder}\\venv\\Scripts\\python.exe",
+		"python.linting.flake8Args": [
+			"--max-line-length=120",
+		],
 	}
 }
