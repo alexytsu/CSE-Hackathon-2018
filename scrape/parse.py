@@ -18,8 +18,16 @@ class Course():
         self._tri3 = False
 
 
-def get_all_prequisites(coursename):
+class Timetable():
+    
+    def __init__(self):
+        trim = [None, None, None]
+        year = [trim, trim, trim]
+        degrees = [year, year, year]
+        self._grid = degrees
 
+
+def get_all_prequisites(coursename):
     courselist = []
 
     with open("output.csv", "r") as csvfile:
