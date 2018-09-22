@@ -1,0 +1,43 @@
+Product:
+-	Idea: From given course/degree, find prerequisites and when you can take them (some courses only offered in certain sems)
+-	Interface: (TBC)
+o	Grid (3x3)
+o	Buttons for each course must complete over time
+o	Click on button, blacks out unavailable on grid
+o	Click on available ? puts course there
+o	Next course only placed afterwards 
+o	Alert if chosen course has prereq
+o	
+o	Reset button
+o	Way to see if you stuff up
+Problem:
+-	Apps should be orientated for user friendliness and help enhance people (you should choose your destination not the app)
+-	Students unsure of higher education pathway post high school, which continues as you continue degree
+-	Uncertainty in pathway planning can cause lengthier degree/time could be allotted elsewhere
+Target Market/Market Size/Opportunity
+-	students (uni) (have developed goal)
+-	students (highschool) (unsure/have goal)
+-	uni staff (required teaching components)
+-	have stats for uni kids/staff in 2017 (UNSW annual report) and hs students 2017 (ABS)
+Need/Context:
+-	On market (competitive) apps show where you can go from here ? they choose your destination
+-	Others (majority) apps focus on immediate (study, revision, timetable, assignments); no regard for future
+o	Lack of planning for future courses/envisioning where you want to be
+-	Most relevant app: UNSW pathways 
+o	only shows a directed graph in the forwards direction
+o	doesn?t cater to people thinking about a goal course
+?	have to be in it (have to invest before you can see a path)
+o	will promote farther thinking and foresight in youth
+Solution/Unique selling points:
+-	App promotes forward thinking, gives path backwards
+-	long term traction; goals will/can change
+-	expansion:
+Platforms to market/Marketing Strategy
+-	Social media relevant (Fb, Instagram, myUNSW, moodle)
+-	?Choose your end point? (slogan)
+-	Eddy ave/on campus promo people
+Market place/Distribution:
+-	Google play store, itunes, 
+Estimated cost (time and fund): (TBC)
+
+
