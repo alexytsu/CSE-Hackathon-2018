@@ -28,6 +28,7 @@ def get_all_prequisites(coursename):
 
     dependency_list = list(set(dependency_list))
     dependency_list = clean_list(dependency_list, courselist)
+    dependency_list.sort()
     return dependency_list
     
 
@@ -36,3 +37,5 @@ def clean_list(course_list, refcourselist):
     coursenames = [x._name for x in refcourselist]
     course_list = [x for x in course_list if x in coursenames]
     return course_list
+
+print(get_all_prequisites("COMP3421"))
