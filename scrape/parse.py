@@ -5,7 +5,7 @@ import re
 with open("output.csv", "r") as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
+        print("Coursename:", row[1])
         reqs = row[3]
-        print(reqs)
         courses = re.findall("[A-Z]{4}[0-9]{4}", reqs)
-        print(courses)
+        print("Prequisites", courses)
