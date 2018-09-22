@@ -17,4 +17,3 @@ def homePage():
 		return render_template('home.html', prereqList=prereqs, search=True, timetable=tt)
 	return render_template('home.html')
 
-
