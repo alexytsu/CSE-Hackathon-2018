@@ -46,14 +46,16 @@ def download_course_offerings():
 
             # keep track of when each subject is offered
             index = 0
-            availability = ['n', 'n', 'n']
+            availability = ''
 
             # find when courses are offered
             for col in cols:
                 result = col.find_all('span', attrs={'class': 'correct'})
                 # if there is the "correct" tick, the course is offered
                 if len(result) > 0:
-                    availability[index-6] = 'y'
+                    availability = availability + 'y'
+                else:
+                    availability = availability + 'n'
                 index = index + 1
 
             # add this to the list of all availabilities
@@ -68,18 +70,24 @@ def download_course_offerings():
         browser.close()
 
         # zip course info with when it's offered
-        info = zip(data, avail)
+        strippedavail = []
+        for a in avail:
+            strippedavail.append(a[-3:])
+        info = zip(data, strippedavail)
 
         # write the data to csv
         with open("output.csv", "w", newline='') as f:
             writer = csv.writer(f)
-            for row in info:
+            for data, availability in info:
                 # some subjects have no requirements
-                if len(row[0]) == 3:
-                    row[0].append("Prerequisite: None")
-                if len(row[0]) == 4:
-                    writer.writerow(row[0] + row[1])
+                if len(data) == 3:
+                    data.append("Prerequisite: None")
+                if len(data) == 4:
+                    writer.writerow(data + [availability])
 
     except Exception:
         browser.close()
         raise
+
+if __name__ == "__main__":
+    download_course_offerings()

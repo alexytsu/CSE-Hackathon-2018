@@ -1,0 +1,84 @@
+Undergraduate,BINF2010,Introduction to Bioinformatics,Prerequisite: BABS1201,nny
+Undergraduate,BINF3010,Applied Bioinformatics,Prerequisite: BIOC2201.,nyn
+Undergraduate,BINF6111,Genome Informatics Workshop,Prerequisite: BINF9010 and COMP9021,nyn
+Undergraduate,BINF6112,Bioinformatics Project B,Prerequisite: None,nny
+Undergraduate,COMP1000,"Web, Spreadsheets & Databases",Prerequisite: None,nyn
+Undergraduate,COMP1400,Programming for Designers,"Prerequisite: Enrolment in a non-CSE major (no BINF, COMP, or SENG)",nny
+Undergraduate,COMP1511,Programming Fundamentals,Prerequisite: None,yyy
+Undergraduate,COMP1521,Computer Systems Fundamentals,Prerequisite: COMP1511 or COMP1911 or COMP1917,nyy
+Undergraduate,COMP1531,Software Eng Fundamentals,Prerequisite: COMP1511 or COMP1917 or COMP1921,yny
+Undergraduate,COMP1911,Computing 1A,"Prerequisite: Enrolment in a non-CSE major (no BINF, COMP, or SENG)",ynn
+Undergraduate,COMP2041,Software Construction,Prerequisite: COMP1511 or COMP1917 or COMP1921,nyn
+Undergraduate,COMP2111,System Modelling and Design,"Prerequisite: MATH1081, and COMP1511 or COMP1917 or COMP1921",ynn
+Undergraduate,COMP2121,Microprocessors & Interfacing,"Prerequisite: COMP1917 or COMP1921 or COMP1511 or COMP1521, or (COMP1911 and MTRN2500)",yyn
+Undergraduate,COMP2511,O-O Design & Programming,"Prerequisite: COMP1927, or (COMP1531 or SENG1031, and COMP2521)",nyy
+Undergraduate,COMP2521,Data Structures and Algorithms,Prerequisite: COMP1511 or COMP1917 or COMP1921,yyy
+Undergraduate,COMP3121,Algorithms & Programming Tech,Prerequisite: COMP1927 or COMP2521,ynn
+Undergraduate,COMP3131,Programming Languages & Compil,Prerequisite: COMP2511 or COMP2911,ynn
+Undergraduate,COMP3141,Software Sys Des&Implementat'n,Prerequisite: COMP1927 or COMP2521,nyn
+Undergraduate,COMP3151,Foundations of Concurrency,"Prerequisite: COMP1927, or COMP1521 and COMP2521",nyn
+Undergraduate,COMP3153,Algorithmic Verification,Prerequisite: A mark of at least 65 in COMP1927 or COMP2521,ynn
+Undergraduate,COMP3161,Concepts of Programming Lang.,Prerequisite: COMP2521 or COMP1927,nny
+Undergraduate,COMP3211,Computer Architecture,Prerequisite: COMP3222 or ELEC2141.,ynn
+Undergraduate,COMP3222,Digital Circuits and Systems,"Prerequisite: COMP2121, or (ELEC1111 or ELEC1112, and COMP1521 or COMP1927)",nny
+Undergraduate,COMP3231,Operating Systems,"Prerequisite: COMP1521 or COMP2121, and COMP2521 or COMP1927",ynn
+Undergraduate,COMP3311,Database Systems,Prerequisite: COMP1531 or COMP1927,yny
+Undergraduate,COMP3331,Computer Networks&Applications,"Prerequisite: COMP1921 or COMP1927 or MTRN3500, or (COMP1521, and COMP2521 or MTRN3500)",yyy
+Undergraduate,COMP3411,Artificial Intelligence,Prerequisite: COMP2521 or COMP1927,ynn
+Undergraduate,COMP3421,Computer Graphics,Prerequisite: COMP2511 or COMP2911,nyn
+Undergraduate,COMP3431,Robotic Software Architecture,"Prerequisite: COMP2521 or COMP1927, and a WAM of at least 70",nny
+Undergraduate,COMP3511,Human Computer Interaction,Prerequisite: Completion of 48 UOC,nny
+Undergraduate,COMP3601,Design Project A,Prerequisite: COMP2121,nny
+Undergraduate,COMP3821,Ext Algorithms&Prog Techniques,Prerequisite: A mark of at least 65 in COMP1927 or COMP2521,nyn
+Undergraduate,COMP3891,Ext Operating Systems,"Prerequisite: COMP1521 or COMP2121, and COMP2521 or COMP1927, and a WAM of at least 75",ynn
+Undergraduate,COMP3900,Computer Science Project,"Prerequisite: COMP1531, and COMP2521 or COMP1927, and enrolled in a BSc Computer Science major.",yyy
+Undergraduate,COMP3901,Special Project A,"Prerequisite: 80+ WAM in COMP, SENG or BINF courses, completion of all first and second year core requirements a CSE program, and agreement from a suitable CSE academic supervisor.",yyy
+Undergraduate,COMP3902,Special Project B,"Prerequisite: 80+ WAM in COMP, SENG or BINF courses, completion of all first and second year core requirements a CSE program, and agreement from a suitable CSE academic supervisor.",yyy
+Undergraduate,COMP4121,Advanced & Parallel Algorithms,Prerequisite: COMP9101 or COMP9801.,nny
+Undergraduate,COMP4128,Programming Challenges,"Co-equisite: COMP3821, or COMP3121 and a 75WAM",nny
+Undergraduate,COMP4141,Theory of Computation,Prerequisite: COMP9020 and COMP9024,ynn
+Undergraduate,COMP4161,Advanced Verification,Prerequisite: Completion of 48 UOC,nny
+Undergraduate,COMP4336,Mobile Data Networking,Prerequisite: COMP3331.,nyn
+Undergraduate,COMP4337,Securing Wireless Networks,Prerequisite: COMP3331.,ynn
+Undergraduate,COMP4418,Knowledge Representation,Prerequisite: COMP9414 or COMP9814 or COMP4415,nny
+Undergraduate,COMP4511,User Interface Design & Constr,Prerequisite: a mark of at least 70 in COMP9511 and a mark of at least 65 in COMP9021,nyn
+Undergraduate,COMP4601,Design Project B,Prerequisite: COMP3222 and COMP3601.,ynn
+Undergraduate,COMP4920,Management and Ethics,"Prerequisite: COMP2511 or COMP2911, and in the final year of the BSc Computer Science or BE / BE (Hons) Bioinformatics Engineering or Computer Engineering.  Software Engineering students enrol in SENG4920.",nny
+Undergraduate,COMP4930,Thesis Part A,"Prerequisite:  Enrolment in Bachelor of Science (Honours) program 4515, or 126 units of credit completed in BE Computer Engineering, BE Bioinformatics or Bioinformatics Engineering, or BE (Honours) Software Engineering.",yyy
+Undergraduate,COMP4931,Thesis Part B,Prerequisite: COMP4930.  Excluded: Program 4515.,yyy
+Undergraduate,COMP4941,Thesis Part B,Prerequisite: COMP4930 and [75 WAM or enrolment in Computer Science Honours],yyy
+Undergraduate,COMP6324,IoT Services Engineering,Prerequisite: COMP9021 and COMP9311,ynn
+Undergraduate,COMP6441,Security Engineering,Prerequisite: Completion of 48 UOC,nyn
+Undergraduate,COMP6443,Web Application Security,Prerequisite: COMP6441 or COMP6841 or COMP9441,ynn
+Undergraduate,COMP6445,Digital Forensics,"Prerequisite: COMP6441 or COMP6841 or COMP9441, and COMP9201 or COMP9283",nny
+Undergraduate,COMP6447,Security Assessment,"Prerequisite: A mark of at least 65 in COMP6841, or a mark of at least 75 in COMP6441 or COMP9441",nyn
+Undergraduate,COMP6714,Info Retrieval and Web Search,Prerequisite: COMP9020 and COMP9021,nny
+Undergraduate,COMP6733,Internet of Things,Prerequisite: 65 WAM and COMP9331,nny
+Undergraduate,COMP6741,Parameterized & Exact Comp.,Prerequisite: COMP9101 or COMP9801.,nny
+Undergraduate,COMP6752,Modelling Concurrent Systems,Prerequisite: COMP9024.,nyn
+Undergraduate,COMP6771,Advanced C++ Programming,Prerequisite: COMP9024.,nyn
+Undergraduate,COMP6841,Extended Security Engineering,Prerequisite: COMP9024.,nyn
+Undergraduate,COMP6843,Extended WebApp Security,Prerequisite: COMP6441 or COMP6841 or COMP9441,ynn
+Undergraduate,COMP6845,Extended Digital Forensics,"Prerequisite: COMP6441 or COMP6841 or COMP9441, and COMP9201 or COMP9283",nny
+Undergraduate,COMP9242,Advanced Operating Systems,Prerequisite: a mark of at least 75 in either COMP9201 or COMP9283.,nyn
+Undergraduate,COMP9243,Distributed Systems,"Prerequisite: COMP9201 or COMP9283, and COMP9331.",nny
+Undergraduate,COMP9313,Big Data Management,Prerequisite: COMP9024 and COMP9311,nyy
+Undergraduate,COMP9315,Database Systems Implementat'n,Prerequisite: COMP9024 and COMP9311.,nyn
+Undergraduate,COMP9318,Data Warehousing & Data Mining,Prerequisite: COMP9020 and COMP9024 and COMP9311,ynn
+Undergraduate,COMP9319,Web Data Compression & Search,Prerequisite: COMP9024.,nyn
+Undergraduate,COMP9321,Data Services Engineering,Prerequisite: COMP9021 and COMP9311,yny
+Undergraduate,COMP9322,Software Service Design & Eng,Prerequisite: COMP9321.,yyn
+Undergraduate,COMP9323,e-Enterprise Project,Prerequisite: COMP9021 and COMP9311 and > 65 WAM,nny
+Undergraduate,COMP9332,Network Routing and Switching,Prerequisite: COMP9331.,nyn
+Undergraduate,COMP9334,Systems Capacity Planning,Prerequisite: COMP9021,ynn
+Undergraduate,COMP9417,Machine Learning & Data Mining,Prerequisite: (COMP9020 and COMP9021) or COMP9024,nyn
+Undergraduate,COMP9418,Advanced Machine Learning,Prerequisite: COMP9417.,nny
+Undergraduate,COMP9444,"Neural Networks, Deep Learning",Prerequisite: COMP9024.,nny
+Undergraduate,COMP9517,Computer Vision,Prerequisite: COMP9024.,nyn
+Undergraduate,COMP9596,Research Project,Prerequisite: None,yyy
+Undergraduate,SENG2011,Program Reasoning Workshop,Prerequisite: COMP2111.,nny
+Undergraduate,SENG2021,Reqts & Design Workshop,"Prerequisite:  SENG1031 or COMP1531, and enrolment in a BE or BE(Hons) Software Engineering major.",ynn
+Undergraduate,SENG3011,Software Eng Workshop 3,Prerequisite: SENG2021,ynn
+Undergraduate,SENG4910,Thesis Part A,Prerequisite: 126 units of credit completed in BE Software Engineering (SENGA1),yyy
+Undergraduate,SENG4911,Thesis Part B,Prerequisite: SENG4910.,yyy
+Undergraduate,SENG4920,Ethics and Management,Prerequisite: SENG3011,nny
