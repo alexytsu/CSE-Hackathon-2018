@@ -9,6 +9,8 @@ def homePage():
 		prereqs = get_all_prequisites(course)
 		prereqs = convert_names_to_courses(prereqs)
 		return render_template('home.html', prereqList=prereqs, search=True)
+	if 'prereq' in request.form:
+		return render_template('home.html', prereq=True)
 	return render_template('home.html')
-	
+
 
