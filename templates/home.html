@@ -44,7 +44,7 @@
         <td>{%if tt._grid[0][0] %}{%for course in tt._grid[0][0]%} {{course}} {%endfor%}{%endif%}
           {% if prereqselected._tri1 %}<button value="00" name="slot" type="submit">
         Select</button>{% endif %}</td>
-        <td>{%if tt._grid[0][1] %}{%for course1 in tt._grid[0][1]%} {{course1}} {%endfor%}{%endif%}
+        <td>{%if tt._grid[0][1] %}{%for course in tt._grid[0][1]%} {{course}} {%endfor%}{%endif%}
           {% if prereqselected._tri2 %}<button value="01" name="slot" type="submit">
         Select</button>{% endif %}</td>
         <td>{%if tt._grid[0][2] %}{%for course in tt._grid[0][2]%} {{course}} {%endfor%}{%endif%}
@@ -53,13 +53,13 @@
       </tr>
       <tr>
         <th>Year 2</th>
-        <td>{%if tt._grid[1][0] %}{%for course in tt._grid[2][0]%} {{course}} {%endfor%}{%endif%}
+        <td>{%if tt._grid[1][0] %}{%for course in tt._grid[1][0]%} {{course}} {%endfor%}{%endif%}
           {% if prereqselected._tri1 %}<button value="10" name="slot" type="submit">
         Select</button>{% endif %}</td>
-        <td>{%if tt._grid[1][1] %}{%for course in tt._grid[2][1]%} {{course}} {%endfor%}{%endif%}
+        <td>{%if tt._grid[1][1] %}{%for course in tt._grid[1][1]%} {{course}} {%endfor%}{%endif%}
           {% if prereqselected._tri2 %}<button value="11" name="slot" type="submit">
         Select</button>{% endif %}</td>
-        <td>{%if tt._grid[1][2] %}{%for course in tt._grid[2][2]%} {{course}} {%endfor%}{%endif%}
+        <td>{%if tt._grid[1][2] %}{%for course in tt._grid[1][2]%} {{course}} {%endfor%}{%endif%}
           {% if prereqselected._tri3 %}<button value="12" name="slot" type="submit">
         Select</button>{% endif %}</td>
       </tr>
