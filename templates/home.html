@@ -19,7 +19,11 @@
     <div>
       {% for prereq in prereqList %}
       <div>
+<<<<<<< HEAD
         <button name="prereq" type="submit" value="{{prereq._name}}">{{prereq._name}}</button>
+=======
+        <input name="prereq" type="radio" value={{prereq._name}}>{{prereq._name}}</button>
+>>>>>>> 3d2ede36da345db6b238badad468d3330984b977
       </div>
       {% endfor %}
     </div>
@@ -52,6 +56,40 @@
       </table>
     </div>
   </div>
+<<<<<<< HEAD
 </form>
 {% endif %}
+=======
+  {% if search %}
+    <div class="table">
+      <table>
+        <tr>
+          <th></th>
+          <th>Trimester 1</th>
+          <th>Trimester 2</th>
+          <th>Trimester 3</th>
+        </tr>
+        <tr>
+          <th>Year 1</th>
+          <td><button name="Y1T1" type="button">Select</button></td>
+          <td><button name="Y1T2" type="button">Select</button></td>
+          <td><button name="Y1T3" type="button">Select</button></td>
+        </tr>
+         <tr>
+          <th>Year 2</th>
+          <td><button name="Y2T1" type="button">Select</button></td>
+          <td><button name="Y2T2" type="button">Select</button></td>
+          <td><button name="Y2T3" type="button">Select</button></td>
+        </tr>
+        <tr>
+          <th>Year 3</th>
+          <td><button name="Y3T1" type="button">Select</button></td>
+          <td><button name="Y3T2" type="button">Select</button></td>
+          <td><button name="Y3T3" type="button">Select</button></td>
+        </tr>
+      </table>
+    </div>
+  {% endif %}
+</div>
+>>>>>>> 3d2ede36da345db6b238badad468d3330984b977
 {% endblock %}
