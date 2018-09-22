@@ -35,7 +35,6 @@ def get_all_prequisites(coursename):
         return []
     course = course[0]
     dependency_list = course._reqs
-    print("Course: ", course._name, "Reqs: ", course._reqs)
 
     for x in course._reqs:
         dependency_list = dependency_list + get_all_prequisites(x)
@@ -43,11 +42,11 @@ def get_all_prequisites(coursename):
     dependency_list = list(set(dependency_list))
     dependency_list = clean_list(dependency_list, courselist)
     dependency_list.sort()
-    dependency_list = convert_names_to_courses(dependency_list)
     return dependency_list
 
 
 def convert_names_to_courses(name_list):
+    print("Inside: ", name_list)
     object_list = []
 
     courselist = []
@@ -59,9 +58,9 @@ def convert_names_to_courses(name_list):
             courses = re.findall("[A-Z]{4}[0-9]{4}", reqs)
             newCourse = Course(row[1], courses)
             courselist.append(newCourse)
-    
 
     for x in name_list:
+        print("Coursename: ", x)
         course = [obj for obj in courselist if x == obj._name]       
         assert len(course) == 1
         course = course[0]
