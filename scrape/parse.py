@@ -51,9 +51,9 @@ def get_all_prequisites(coursename):
         for row in reader:
             reqs = row[3]
             avail = row[4]
+            print(avail)
             courses = re.findall("[A-Z]{4}[0-9]{4}", reqs)
             newCourse = Course(row[1], courses)
-            print(avail)
             if avail[0] == 'y':
                 newCourse.set1()
             if avail[1] == 'y':
