@@ -10,4 +10,5 @@ def homePage():
 		prereqs = convert_names_to_courses(prereqs)
 		return render_template('home.html', prereqList=prereqs, search=True)
 	return render_template('home.html')
+	
 
