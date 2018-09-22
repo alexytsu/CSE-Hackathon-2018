@@ -6,6 +6,7 @@ from scrape.parse import get_all_prequisites
 def homePage():
 	if request.method == 'POST':
 		course = request.form['search_course']
+		print("Course:" ,course)
 		prereqs = get_all_prequisites(course)
 		print(prereqs)
 
