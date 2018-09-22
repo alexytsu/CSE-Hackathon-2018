@@ -9,6 +9,6 @@ def homePage():
 		print("Course:" ,course)
 		prereqs = get_all_prequisites(course)
 		print(prereqs)
-
+		return render_template('home.html', prereqList=prereqs, search=True)
 	return render_template('home.html')
 

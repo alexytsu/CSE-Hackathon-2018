@@ -14,4 +14,23 @@
     </form>
   </div>
 </div>
+<div>
+  {% if search %} 
+    {% for prereq in prereqList %}
+    <button type="button">{{prereq._name}}</button>
+    {% endfor %}
+  {% endif %}
+</div>
+<div class="grid-container">
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>  
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>  
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>  
+</div>
+
 {% endblock %}
