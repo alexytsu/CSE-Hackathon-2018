@@ -13,9 +13,9 @@ class Course():
     def __init__(self, name, reqs):
         self._name = name
         self._reqs = reqs
-        self._tri1 = True
+        self._tri1 = False
         self._tri2 = False
-        self._tri3 = True
+        self._tri3 = False
 
 
 class Timetable():
@@ -37,8 +37,10 @@ def get_all_prequisites(coursename):
         for row in reader:
             reqs = row[3]
             avail = row[4]
+            print(avail)
             courses = re.findall("[A-Z]{4}[0-9]{4}", reqs)
             newCourse = Course(row[1], courses)
+            
             if avail[0] == 'y':
                 newCourse._tri1 = True
             if avail[1] == 'y':
