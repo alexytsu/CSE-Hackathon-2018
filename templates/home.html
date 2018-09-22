@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
+
 <head>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
 </head>
 <div class="topnav">
   <a class="active">Enter your course</a>
@@ -12,84 +13,65 @@
     </form>
   </div>
 </div>
-{% if search %} 
+{% if search %}
 <form method="POST">
   <input type="hidden" name="search_course" value="{{course}}">
-  <div class="aligned_content">
+  <input type="hidden" name="clicked_table" value="True">
+  <input type="hidden" name="prereqselected" value="{{prereqselected}}" <div class="aligned_content">
+  <div>
+    {% for prereq in prereqList %}
     <div>
-      {% for prereq in prereqList %}
-      <div>
-<<<<<<< HEAD
-        <button name="prereq" type="submit" value="{{prereq._name}}">{{prereq._name}}</button>
-=======
-        <input name="prereq" type="radio" value={{prereq._name}}>{{prereq._name}}</button>
->>>>>>> 3d2ede36da345db6b238badad468d3330984b977
-      </div>
-      {% endfor %}
+      <button name="prereq" type="submit" value="{{prereq._name}}">{{prereq._name}}</button>
     </div>
-    <div class="table">
-      <table>
-        <tr>
-          <th></th>
-          <th>Trimester 1</th>
-          <th>Trimester 2</th>
-          <th>Trimester 3</th>
-        </tr>
-        <tr>
-          <th>Year 1</th>
-          <td><button value="01" name="slot" type="submit">Select</button></td>
-          <td><button value="02" name="slot" type="submit">Select</button></td>
-          <td><button value="03" name="slot" type="submit">Select</button></td>
-        </tr>
-        <tr>
-          <th>Year 2</th>
-          <td><button value="11" name="slot" type="submit">Select</button></td>
-          <td><button value="12" name="slot" type="submit">Select</button></td>
-          <td><button value="13" name="slot" type="submit">Select</button></td>
-        </tr>
-        <tr>
-          <th>Year 3</th>
-          <td><button value="21" name="slot" type="submit">Select</button></td>
-          <td><button value="22" name="slot" type="submit">Select</button></td>
-          <td><button value="23" name="slot" type="submit">Select</button></td>
-        </tr>
-      </table>
-    </div>
+    {% endfor %}
   </div>
-<<<<<<< HEAD
+  <div class="table">
+    <table>
+      <tr>
+        <th></th>
+        <th>Trimester 1</th>
+        <th>Trimester 2</th>
+        <th>Trimester 3</th>
+      </tr>
+      <tr>
+        <th>Year 1</th>
+        <td>{%if tt._grid[0][0] %}{%for course in tt._grid[0][0]%} {{course}} {%endfor%}{%endif%}
+          {% if prereqselected._tri1 %}<button value="00" name="slot" type="submit">
+        Select</button>{% endif %}</td>
+        <td>{%if tt._grid[0][1] %}{%for course1 in tt._grid[0][1]%} {{course1}} {%endfor%}{%endif%}
+          {% if prereqselected._tri2 %}<button value="01" name="slot" type="submit">
+        Select</button>{% endif %}</td>
+        <td>{%if tt._grid[0][2] %}{%for course in tt._grid[0][2]%} {{course}} {%endfor%}{%endif%}
+          {% if prereqselected._tri3 %}<button value="02" name="slot" type="submit">
+        Select</button>{% endif %}</td>
+      </tr>
+      <tr>
+        <th>Year 2</th>
+        <td>{%if tt._grid[1][0] %}{%for course in tt._grid[2][0]%} {{course}} {%endfor%}{%endif%}
+          {% if prereqselected._tri1 %}<button value="10" name="slot" type="submit">
+        Select</button>{% endif %}</td>
+        <td>{%if tt._grid[1][1] %}{%for course in tt._grid[2][1]%} {{course}} {%endfor%}{%endif%}
+          {% if prereqselected._tri2 %}<button value="11" name="slot" type="submit">
+        Select</button>{% endif %}</td>
+        <td>{%if tt._grid[1][2] %}{%for course in tt._grid[2][2]%} {{course}} {%endfor%}{%endif%}
+          {% if prereqselected._tri3 %}<button value="12" name="slot" type="submit">
+        Select</button>{% endif %}</td>
+      </tr>
+      <tr>
+        <th>Year 3</th>
+        <td>{%if tt._grid[2][0] %}{%for course in tt._grid[2][0]%} {{course}} {%endfor%}{%endif%}
+          {% if prereqselected._tri1 %}<button value="20" name="slot" type="submit">
+        Select</button>{% endif %}</td>
+        <td>{%if tt._grid[2][1] %}{%for course in tt._grid[2][1]%} {{course}} {%endfor%}{%endif%}
+          {% if prereqselected._tri2 %}<button value="21" name="slot" type="submit">
+        Select</button>{% endif %}</td>
+        <td>{%if tt._grid[2][2] %}{%for course in tt._grid[2][2]%} {{course}} {%endfor%}{%endif%}
+          {% if prereqselected._tri3 %}<button value="22" name="slot" type="submit">
+        Select</button>{% endif %}</td>
+      </tr>
+    </table>
+  </div>
+  </div>
 </form>
 {% endif %}
-=======
-  {% if search %}
-    <div class="table">
-      <table>
-        <tr>
-          <th></th>
-          <th>Trimester 1</th>
-          <th>Trimester 2</th>
-          <th>Trimester 3</th>
-        </tr>
-        <tr>
-          <th>Year 1</th>
-          <td><button name="Y1T1" type="button">Select</button></td>
-          <td><button name="Y1T2" type="button">Select</button></td>
-          <td><button name="Y1T3" type="button">Select</button></td>
-        </tr>
-         <tr>
-          <th>Year 2</th>
-          <td><button name="Y2T1" type="button">Select</button></td>
-          <td><button name="Y2T2" type="button">Select</button></td>
-          <td><button name="Y2T3" type="button">Select</button></td>
-        </tr>
-        <tr>
-          <th>Year 3</th>
-          <td><button name="Y3T1" type="button">Select</button></td>
-          <td><button name="Y3T2" type="button">Select</button></td>
-          <td><button name="Y3T3" type="button">Select</button></td>
-        </tr>
-      </table>
-    </div>
-  {% endif %}
-</div>
->>>>>>> 3d2ede36da345db6b238badad468d3330984b977
 {% endblock %}
