@@ -13,22 +13,38 @@ class Course():
     def __init__(self, name, reqs):
         self._name = name
         self._reqs = reqs
-        self._tri1 = True
+        self._tri1 = False
         self._tri2 = False
-        self._tri3 = True
+        self._tri3 = False
+
+
+class Timetable():
+    
+    def __init__(self):
+        trim = [None, None, None]
+        year = [trim, trim, trim]
+        degrees = [year, year, year]
+        self._grid = degrees
 
 
 def get_all_prequisites(coursename):
-
     courselist = []
 
     with open("output.csv", "r") as csvfile:
         reader = csv.reader(csvfile)
         for row in reader:
             reqs = row[3]
+            avail = row[4]
             courses = re.findall("[A-Z]{4}[0-9]{4}", reqs)
             newCourse = Course(row[1], courses)
+            if avail[0] == 'y':
+                newCourse._tri1 = True
+            if avail[1] == 'y':
+                newCourse._tri2 = True
+            if avail[2] == 'y':
+                newCourse._tri3 = True
             courselist.append(newCourse)
+
         course = [x for x in courselist if x._name == coursename] 
 
     if(len(course) == 0):
