@@ -14,8 +14,8 @@ class Course():
         self._name = name
         self._reqs = reqs
         self._tri1 = False
-        self._tri2 = True
-        self._tri3 = True
+        self._tri2 = False
+        self._tri3 = False
 
     def set1(self):
         print("fuck")
