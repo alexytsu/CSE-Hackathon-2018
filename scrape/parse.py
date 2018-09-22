@@ -17,6 +17,17 @@ class Course():
         self._tri2 = False
         self._tri3 = False
 
+    def set1(self):
+        print("fuck")
+        self._tri1 = True
+    
+    def set2(self):
+        print("me")
+        self._tri2 = True
+
+    def set3(self):
+        print("sumimasen")
+        self._tri3 = True
 
 class Timetable():
     
@@ -27,6 +38,9 @@ class Timetable():
     def set_course(self, coursename, year, trim):
         self._grid[year][trim].append(coursename)
         print(self._grid)
+
+    def check_validity(self):
+        pass  
 
 
 def get_all_prequisites(coursename):
@@ -40,13 +54,12 @@ def get_all_prequisites(coursename):
             print(avail)
             courses = re.findall("[A-Z]{4}[0-9]{4}", reqs)
             newCourse = Course(row[1], courses)
-            
             if avail[0] == 'y':
-                newCourse._tri1 = True
+                newCourse.set1()
             if avail[1] == 'y':
-                newCourse._tri2 = True
+                newCourse.set2()
             if avail[2] == 'y':
-                newCourse._tri3 = True
+                newCourse.set3()
             courselist.append(newCourse)
 
         course = [x for x in courselist if x._name == coursename] 
@@ -75,8 +88,16 @@ def convert_names_to_courses(name_list):
         reader = csv.reader(csvfile)
         for row in reader:
             reqs = row[3]
+            avail = row[4]
             courses = re.findall("[A-Z]{4}[0-9]{4}", reqs)
             newCourse = Course(row[1], courses)
+            print(avail)
+            if avail[0] == 'y':
+                newCourse.set1()
+            if avail[1] == 'y':
+                newCourse.set2()
+            if avail[2] == 'y':
+                newCourse.set3()
             courselist.append(newCourse)
 
     for x in name_list:
