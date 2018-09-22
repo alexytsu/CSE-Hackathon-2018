@@ -17,38 +17,40 @@
     {% if search %} 
       {% for prereq in prereqList %}
       <div>
-        <button name="prereq" type="button">{{prereq._name}}</button>
+        <input name="prereq" type="radio" value={{prereq._name}}>{{prereq._name}}</button>
       </div>
       {% endfor %}
     {% endif %}
   </div>
-  <div class="table">
-    <table>
-      <tr>
-        <th></th>
-        <th>Trimester 1</th>
-        <th>Trimester 2</th>
-        <th>Trimester 3</th>
-      </tr>
-      <tr>
-        <th>Year 1</th>
-        <td><button name="" type="button">Select</button></td>
-        <td><button name="prereq" type="button">Select</button></td>
-        <td><button name="prereq" type="button">Select</button></td>
-      </tr>
-       <tr>
-        <th>Year 2</th>
-        <td><button name="prereq" type="button">Select</button></td>
-        <td><button name="prereq" type="button">Select</button></td>
-        <td><button name="prereq" type="button">Select</button></td>
-      </tr>
-      <tr>
-        <th>Year 3</th>
-        <td><button name="prereq" type="button">Select</button></td>
-        <td><button name="prereq" type="button">Select</button></td>
-        <td><button name="prereq" type="button">Select</button></td>
-      </tr>
-    </table>
-  </div>
+  {% if search %}
+    <div class="table">
+      <table>
+        <tr>
+          <th></th>
+          <th>Trimester 1</th>
+          <th>Trimester 2</th>
+          <th>Trimester 3</th>
+        </tr>
+        <tr>
+          <th>Year 1</th>
+          <td><button name="Y1T1" type="button">Select</button></td>
+          <td><button name="Y1T2" type="button">Select</button></td>
+          <td><button name="Y1T3" type="button">Select</button></td>
+        </tr>
+         <tr>
+          <th>Year 2</th>
+          <td><button name="Y2T1" type="button">Select</button></td>
+          <td><button name="Y2T2" type="button">Select</button></td>
+          <td><button name="Y2T3" type="button">Select</button></td>
+        </tr>
+        <tr>
+          <th>Year 3</th>
+          <td><button name="Y3T1" type="button">Select</button></td>
+          <td><button name="Y3T2" type="button">Select</button></td>
+          <td><button name="Y3T3" type="button">Select</button></td>
+        </tr>
+      </table>
+    </div>
+  {% endif %}
 </div>
 {% endblock %}
