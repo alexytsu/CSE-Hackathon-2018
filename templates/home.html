@@ -12,36 +12,43 @@
     </form>
   </div>
 </div>
-<div>
-  {% if search %} 
-    {% for prereq in prereqList %}
-    <button name="prereq" type="button">{{prereq._name}}</button>
-    {% endfor %}
-  {% endif %}
-<table>
-  <tr>
-    <th></th>
-    <th>Trimester 1</th>
-    <th>Trimester 2</th>
-    <th>Trimester 3</th>
-  </tr>
-  <tr>
-    <th>Year 1</th>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-   <tr>
-    <th>Year 2</th>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>Year 3</th>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+<div class="aligned_content">
+  <div>
+    {% if search %} 
+      {% for prereq in prereqList %}
+      <div>
+        <button name="prereq" type="button">{{prereq._name}}</button>
+      </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+  <div class="table">
+    <table>
+      <tr>
+        <th></th>
+        <th>Trimester 1</th>
+        <th>Trimester 2</th>
+        <th>Trimester 3</th>
+      </tr>
+      <tr>
+        <th>Year 1</th>
+        <td><button name="" type="button">Select</button></td>
+        <td><button name="prereq" type="button">Select</button></td>
+        <td><button name="prereq" type="button">Select</button></td>
+      </tr>
+       <tr>
+        <th>Year 2</th>
+        <td><button name="prereq" type="button">Select</button></td>
+        <td><button name="prereq" type="button">Select</button></td>
+        <td><button name="prereq" type="button">Select</button></td>
+      </tr>
+      <tr>
+        <th>Year 3</th>
+        <td><button name="prereq" type="button">Select</button></td>
+        <td><button name="prereq" type="button">Select</button></td>
+        <td><button name="prereq" type="button">Select</button></td>
+      </tr>
+    </table>
+  </div>
+</div>
 {% endblock %}

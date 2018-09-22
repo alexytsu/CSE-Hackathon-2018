@@ -86,3 +86,14 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+.aligned_content {
+    display: flex;
+    margin-top: 16px;
+    padding-left: 16px;
+}
+
+.table {
+    width: 80%;
+    padding-left: 16px;
+}
