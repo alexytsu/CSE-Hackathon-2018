@@ -11,9 +11,12 @@ def homePage():
 		course = request.form['search_course']
 		prereqs = get_all_prequisites(course)
 		prereqs = convert_names_to_courses(prereqs)
-		return render_template('home.html', prereqList=prereqs, search=True)
-	if 'prereq' in request.form:
-		return render_template('home.html', prereq=True)
-		return render_template('home.html', prereqList=prereqs, search=True, timetable=tt)
+
+<<<<<<< HEAD
+=======
+		## update tt
+
+		return render_template('home.html', course=course, prereqList=prereqs, search=True, timetable=tt)
 	return render_template('home.html')
 
+>>>>>>> 08d894de42ee2d67b6e773f8f8ce2ce2e56c4ade

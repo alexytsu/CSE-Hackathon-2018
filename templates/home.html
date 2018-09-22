@@ -12,15 +12,46 @@
     </form>
   </div>
 </div>
-<div class="aligned_content">
-  <div>
-    {% if search %} 
+{% if search %} 
+<form method="POST">
+  <input type="hidden" name="search_course" value="{{course}}">
+  <div class="aligned_content">
+    <div>
       {% for prereq in prereqList %}
       <div>
-        <input name="prereq" type="radio" value={{prereq._name}}>{{prereq._name}}</button>
+        <button name="prereq" type="submit" value="{{prereq._name}}">{{prereq._name}}</button>
+
       </div>
       {% endfor %}
-    {% endif %}
+    </div>
+    <div class="table">
+      <table>
+        <tr>
+          <th></th>
+          <th>Trimester 1</th>
+          <th>Trimester 2</th>
+          <th>Trimester 3</th>
+        </tr>
+        <tr>
+          <th>Year 1</th>
+          <td><button value="01" name="slot" type="submit">Select</button></td>
+          <td><button value="02" name="slot" type="submit">Select</button></td>
+          <td><button value="03" name="slot" type="submit">Select</button></td>
+        </tr>
+        <tr>
+          <th>Year 2</th>
+          <td><button value="11" name="slot" type="submit">Select</button></td>
+          <td><button value="12" name="slot" type="submit">Select</button></td>
+          <td><button value="13" name="slot" type="submit">Select</button></td>
+        </tr>
+        <tr>
+          <th>Year 3</th>
+          <td><button value="21" name="slot" type="submit">Select</button></td>
+          <td><button value="22" name="slot" type="submit">Select</button></td>
+          <td><button value="23" name="slot" type="submit">Select</button></td>
+        </tr>
+      </table>
+    </div>
   </div>
   {% if search %}
     <div class="table">
@@ -54,3 +85,5 @@
   {% endif %}
 </div>
 {% endblock %}
+
+
