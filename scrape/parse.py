@@ -13,18 +13,20 @@ class Course():
     def __init__(self, name, reqs):
         self._name = name
         self._reqs = reqs
-        self._tri1 = False
+        self._tri1 = True
         self._tri2 = False
-        self._tri3 = False
+        self._tri3 = True
 
 
 class Timetable():
     
     def __init__(self):
-        trim = [None, None, None]
-        year = [trim, trim, trim]
-        degrees = [year, year, year]
+        degrees = [[[], [], []], [[], [], []],[[], [], []] ]
         self._grid = degrees
+
+    def set_course(self, coursename, year, trim):
+        self._grid[year][trim].append(coursename)
+        print(self._grid)
 
 
 def get_all_prequisites(coursename):
