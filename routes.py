@@ -8,6 +8,8 @@ tt = Timetable()
 @app.route('/', methods=['GET', 'POST'])
 def homePage():
 	if request.method == 'POST':
+		if 'reset' in request.form:
+			return render_template('home.html')
 		course = request.form['search_course']
 		prereqs = get_all_prequisites(course)
 		prereqs = convert_names_to_courses(prereqs)

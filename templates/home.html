@@ -5,6 +5,10 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
 </head>
 <div class="topnav">
+  <form method="POST">
+    <!--<button name="reset" type="submit">Reset</button>-->
+    <a onclick="form.submit()" name='reset' class="active">Reset</a>
+  </form>
   <a class="active">Enter your course</a>
   <div class="search-container">
     <form method="POST">
@@ -17,11 +21,13 @@
 <form method="POST">
   <input type="hidden" name="search_course" value="{{course}}">
   <input type="hidden" name="clicked_table" value="True">
-  <input type="hidden" name="prereqselected" value="{{prereqselected}}" <div class="aligned_content">
+  <input type="hidden" name="prereqselected" value="{{prereqselected}}" 
+  <div class="aligned_content">
   <div>
     {% for prereq in prereqList %}
     <div>
       <button name="prereq" type="submit" value="{{prereq._name}}">{{prereq._name}}</button>
+
     </div>
     {% endfor %}
   </div>
@@ -75,3 +81,4 @@
 </form>
 {% endif %}
 {% endblock %}
+
