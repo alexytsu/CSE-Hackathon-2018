@@ -1,7 +1,12 @@
 import csv
 import re
 
-from course import Course
+
+class Course():
+
+    def __init__(self, name, reqs):
+        self._name = name
+        self._reqs = reqs
 
 
 def get_all_prequisites(coursename):
@@ -30,12 +35,10 @@ def get_all_prequisites(coursename):
     dependency_list = clean_list(dependency_list, courselist)
     dependency_list.sort()
     return dependency_list
-    
+
 
 # removes courses that don't exist anymore
 def clean_list(course_list, refcourselist):
     coursenames = [x._name for x in refcourselist]
     course_list = [x for x in course_list if x in coursenames]
     return course_list
-
-print(get_all_prequisites("COMP3421"))
